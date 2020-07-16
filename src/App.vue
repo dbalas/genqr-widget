@@ -88,7 +88,7 @@ export default {
   .wrapper {
     position: relative;
     margin: 2em;
-    width: 24em;
+    max-width: 24em;
     height: 31em;
     overflow: hidden;
   }
@@ -102,7 +102,7 @@ export default {
 
   .formulate-form,
   .qr-view {
-    width: 24em;
+    max-width: 24em;
     height: 31em;
     padding: 2em;
   }
