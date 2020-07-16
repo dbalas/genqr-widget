@@ -88,8 +88,6 @@ export default {
   .wrapper {
     position: relative;
     margin: 2em;
-    max-width: 24em;
-    height: 31em;
     overflow: hidden;
   }
 
@@ -102,9 +100,14 @@ export default {
 
   .formulate-form,
   .qr-view {
-    max-width: 24em;
+    width: 24em;
     height: 31em;
     padding: 2em;
+
+    @include media-breakpoint-down(xs) {
+      width: auto;
+      padding: 1em;
+    }
   }
 
   .formulate-input-element--submit {
